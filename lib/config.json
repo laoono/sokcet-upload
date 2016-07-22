@@ -1,0 +1,9 @@
+{
+    "limitSize": "1 * 1024 * 1024"
+    , "MIME": ["image/jpeg", "image/png", "image/gif", "image/jpg"]
+    , "url": "http://data.laoono.com"
+    , "root": "/blog"
+    , "directory": "/tmp/node_upload"
+    , "wsUrl": "ws://127.0.0.1:5000"
+    , "wsPort": "5000"
+}

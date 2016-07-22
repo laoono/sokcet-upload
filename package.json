@@ -1,0 +1,27 @@
+{
+  "name": "laoono-upload",
+  "version": "1.1.9",
+  "description": "node upload",
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "^1.0.17",
+    "hash-util": "^0.1.0",
+    "jade": "^1.11.0",
+    "rev-hash": "^1.0.0",
+    "ws": "^1.1.0"
+  },
+  "devDependencies": {
+    "formidable": "^1.0.17",
+    "hash-util": "^0.1.0",
+    "jade": "^1.11.0",
+    "rev-hash": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "laoono",
+  "license": "ISC",
+  "keywords": [
+    "laoono-upload"
+  ]
+}

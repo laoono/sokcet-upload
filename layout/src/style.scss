@@ -1,0 +1,161 @@
+// @author: laoono
+// @date: 2016-06-01
+// @time: 22:22
+// @contact: laoono.com
+// @description:
+
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+$color: #4FC08D;
+$color_hover: #3AA373;
+$color_disabled: rgba(79, 192, 141, 0.6);
+
+body {
+    font: 14px "Lantinghei SC","Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+    color: #333;
+    background-color: #eee;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h1, p {
+    text-align: center;
+    line-height: 2;
+}
+.link {
+    color: $color;
+    text-decoration: underline;
+    padding: 0 0.5rem;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.file-list, .file-socket-lists {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.form-control-wrap {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    position: relative;
+    form[method="post"] {
+        display: flex;
+        position: relative;
+    }
+
+    input[type="file"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .field-input-text-out {
+        position: relative;
+        flex: 1;
+    }
+
+    .field-input-text {
+        width: 100%;
+        height: 40px;
+        border: 1px solid $color;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 0 1rem;
+        border-right: none;
+    }
+
+    .field-submit {
+        display: block;
+        width: 100px;
+        height: 40px;
+        border: none;
+        background: $color;
+        color: #ffffff;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            background-color: $color_hover;
+        }
+        &[disabled] {
+            background-color: $color_disabled;
+            cursor: default;
+        }
+    }
+}
+
+.mask-layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.loading {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background-color: rgba(0, 0 ,0, .8);
+    border-radius: 10px;
+    line-height: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+.field-name-wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+.field-name {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 240px;
+    margin: -100px 0 0 -120px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+    padding: 0 1rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.file-socket-lists {
+    div {
+        margin-bottom: 1rem;
+    }
+}
+
+.file-socket-list-name {
+    color: #E36B6B;
+    padding-right: .5rem;
+}
+
