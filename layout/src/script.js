@@ -78,6 +78,19 @@
                 var data = JSON.parse(evt.data);
                 socketView(data);
             };
+
+            ws.onopen = function () {
+                var data = {
+                    online: true
+                };
+            
+                data = JSON.stringify(data);
+                
+                setInterval(function() {
+                    
+                    ws.send(data);
+                }, 25 * 1000);   
+            };
             
             return ws;
         }
@@ -85,18 +98,6 @@
 
     socket();
     
-    ws.onopen = function () {
-        var data = {
-            online: true
-        };
-       
-        data = JSON.stringify(data);
-        
-        setInterval(function() {
-            
-            ws.send(data);
-        }, 25 * 1000);   
-    };
 
     function uploadPic() {
         var imgCrrrent;

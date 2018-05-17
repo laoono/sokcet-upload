@@ -1,6 +1,6 @@
 {
   "name": "laoono-upload",
-  "version": "1.2.2",
+  "version": "1.2.5",
   "description": "node upload",
   "main": "index.js",
   "dependencies": {
